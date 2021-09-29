@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sikanoppapeli</title>
+    <link rel="stylesheet" href="styles.css"></link>
+</head>
+<body onload="piilotaPeliNakyma()">
+    <script src="script.js"></script>
+
+<div id="alkunakyma">
+    <div class="otsikko">Sikanoppapeli</div>
+
+
+
+    <div class="montako-pelaajaa">Määrittele pelaajat:</div>
+
+    <form id ="pelaaja-formi">
+        <input class="pelaaja-laatikko" id="pelaaja-laatikko-1" name ="eka" type="text"><br>
+        <input class="pelaaja-laatikko" id="pelaaja-laatikko-2" name ="toka" type="text"><br>
+        <input class="pelaaja-laatikko" id="pelaaja-laatikko-3" name ="kolmas" type="text"><br>
+        <input class="pelaaja-laatikko" id="pelaaja-laatikko-4" name ="neljas" type="text"><br>
+        <input class="pelaaja-laatikko" id="pelaaja-laatikko-5" name ="viides" type="text"><br>
+        <input class="pelaaja-laatikko" id="pelaaja-laatikko-6" name ="kuudes" type="text"><br>
+        <input class="pelaaja-laatikko" id="pelaaja-laatikko-7" name ="seiska" type="text"><br>
+        <input class="pelaaja-laatikko" id="pelaaja-laatikko-8" name ="kasi" type="text"><br>
+    </form>
+
+
+
+    <div class="yksi-vai-kaksi">Yksi vai kaksi noppaa</div>
+    <select id="noppa-valikko">
+        <option id="1-noppa">1</option>
+        <option id="2-noppaa">2</option>
+    </select>
+    <br>
+
+    <input class="nappula" id="aloita-peli" type="button" value="Aloita peli" onclick="aloitapeli()">
+
+</div>
+
+<div class="pelinakyma" id="pelinakyma">
+
+<div class="Pelaaja-nakyma">
+    <div class="pelaaja">
+        <div id="pelaaja-1"></div>
+        <div id="pisteet-1" class="points"></div>
+        <div class="vuoro" id="vuoro1">VUORO</div>
+    </div>
+
+    <div class="pelaaja">
+        <div id="pelaaja-2"></div>
+        <div id="pisteet-2" class="points"></div>
+        <div class="vuoro" id="vuoro2"></div>
+    </div>
+
+    <div class="pelaaja">
+        <div id="pelaaja-3"></div>
+        <div id="pisteet-3" class="points"></div>
+        <div class="vuoro" id="vuoro3"></div>
+    </div>
+
+    <div class="pelaaja">
+        <div id="pelaaja-4"></div>
+        <div id="pisteet-4" class="points"></div>
+        <div class="vuoro" id="vuoro4"></div>
+    </div>
+
+    <div class="pelaaja">
+        <div id="pelaaja-5"></div>
+        <div id="pisteet-5" class="points"></div>
+        <div class="vuoro" id="vuoro5"></div>
+    </div>
+
+    <div class="pelaaja">
+        <div id="pelaaja-6"></div>
+        <div id="pisteet-6" class="points"></div>
+        <div class="vuoro" id="vuoro6"></div>
+    </div>
+
+    <div class="pelaaja">
+        <div id="pelaaja-7"></div>
+        <div id="pisteet-7" class="points"></div>
+        <div class="vuoro" id="vuoro7"></div>
+    </div>
+
+    <div class="pelaaja">
+        <div id="pelaaja-8"></div>
+        <div id="pisteet-8" class="points"></div>
+        <div class="vuoro" id="vuoro8"></div>
+    </div>
+</div>
+
+    <section class="nopat">
+        <div class = "noppa">
+            <img id="noppa-kuva" class="noppa-kuva" src="img/dice1.png">
+        </div>
+    
+        <div class = "noppa">
+            <img id="noppa-kuva2" class="noppa-kuva" src="img/dice2.png">
+        </div>
+    </section>
+   
+    <div class="heita" onclick="pelaa()">Heitä</div>
+    <div class="lopetaHeittaminen" onclick="lopetaHeittaminen()">Lopeta heittäminen</div>
+    
+</div>
+
+
+</body>
+</html>

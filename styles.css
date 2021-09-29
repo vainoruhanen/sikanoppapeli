@@ -1,0 +1,115 @@
+
+
+:root{
+    --otsikko-vari: #D86363; 
+}
+
+.nappula{
+    margin-top: 25px;
+}
+
+.montako-pelaajaa{
+    margin-top: 25px;
+}
+
+.yksi-vai-kaksi{
+    margin-top: 25px;
+}
+
+
+
+body{
+    text-align: center;
+}
+
+.noppa{
+    border-style: solid;
+    border-width: 10px;
+    width: 20%;
+    border-color: var(--otsikko-vari);
+    transform: translateX(-50%);
+    margin-left:50%;
+}
+
+.noppa-kuva{
+    height: 150px;
+}
+
+.nopat{
+    margin-top: 10%;
+    transform: translateX(-50%);
+    margin-left:50%;
+}
+
+
+/*
+
+kaksi
+.nopat{
+    transform: translateX(-50%);
+    margin-left:50%;
+    display: flex;
+}
+
+
+
+*/
+
+
+.otsikko{
+    font-size: 5em;
+    color: var(--otsikko-vari);
+}
+
+.heita{
+    user-select: none;
+    cursor: pointer;
+    margin-top: 50px;
+    transform: translateX(-50%);
+     margin-left: 50%;
+    border-style: solid;
+    text-align: center;
+    font-size: 3.5em;
+    width: 10%;
+    background-color: var(--otsikko-vari);
+    
+}
+
+.lopetaHeittaminen{
+    user-select: none;
+    cursor: pointer;
+    margin-top: 50px;
+    transform: translateX(-50%);
+     margin-left: 50%;
+    border-style: solid;
+    text-align: center;
+    font-size: 1.75em;
+    width: 10%;
+    background-color: var(--otsikko-vari);
+}
+
+
+.Pelaaja-nakyma{
+    transform: translateX(-50%);
+    margin-left: 50%;
+    position: absolute;
+    top: 5%;
+    width: 50%;
+    
+}
+
+
+.pelaaja{
+    float: left;
+    padding: 3%;
+    
+}
+
+.vuoro{
+    background-color: lawngreen;
+}
+
+
+.pelaaja-laatikko{
+    margin-top: 4px;
+}
