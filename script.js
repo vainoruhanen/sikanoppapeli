@@ -34,6 +34,10 @@ function aloitapeli(){
     naytaPeliNakyma();
     piilotaAlkuNakyma();
     paivitaPelaajat();
+
+    if(noppia == 1){
+        document.getElementById("noppa1").style.display = "none";
+    }
 }
 
 
