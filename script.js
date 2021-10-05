@@ -19,7 +19,7 @@ var vuoro = 1;
 var noppa = 0;
 var noppa2 = 0;
 
-var kierroksenPisteet = 0;
+var kierroksenPisteet = 0; 
 
 var vuoroVaihtuu = false;
 
@@ -113,6 +113,15 @@ function heita(){
     
   
 }
+
+
+function paivitaKierrosPisteet(){
+    document.getElementById("pistenakyma").innerHTML = "Kierroksen pisteet: " + kierroksenPisteet;
+}
+
+
+
+
 
 function pelaa(){
     if(noppia == 1){
@@ -238,6 +247,10 @@ function paivitaPisteet(){
     if(pelaajia >= 1){
         document.getElementById("pisteet-1").innerHTML = pisteet1;
     }
+
+   setTimeout(() => {
+    paivitaKierrosPisteet();
+   }, 1000);
    
 }
 
